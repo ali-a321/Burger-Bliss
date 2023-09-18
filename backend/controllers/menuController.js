@@ -51,12 +51,15 @@ const addMenu = async (req, res) => {
 const getMenu = async (req, res) => {
     try {
         const sql = `
-        SELECT m.food_id, m.food_name, m.price, m.descriptions, m.food_picture, c.category_name
+      SELECT m.food_id, m.food_name, m.price, m.descriptions, m.food_picture, c.category_name
         FROM menu AS m
         JOIN categories AS c ON m.category_id = c.category_id
         ORDER BY
-          FIELD(c.category_name, 'Sides', 'Sandwiches', 'Burgers') DESC,
-          c.category_name ASC;
+          FIELD(c.category_name, 'Burgers', 'Sandwiches', 'Sides') DESC,
+          FIELD(m.food_id, 16, 17, 18) DESC,
+          c.category_name ASC,
+          m.food_name ASC;
+
         `;
 
         db.query(sql, (error, rows) => {
