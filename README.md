@@ -18,5 +18,5 @@ Burger Bliss is a comprehensive burger website designed to cater to both custome
 - **Customer Feedback:** The website includes a Contact Us section where the restaurant can gather valuable insights and respond to customer reviews.
 
 **Infrastructure:**
-- **Database:** MySQL database on AWS through RDS, ensuring data integrity, reliability, and scalability.
-- **Server Deployment:** The Node.js Express server is deployed on AWS EC2, guaranteeing consistent performance and availability.
+- **Database:** MySQL database on AWS through RDS.
+- **Server Deployment:** The Node.js Express server is deployed on AWS EC2.
