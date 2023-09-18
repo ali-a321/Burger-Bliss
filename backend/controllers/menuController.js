@@ -51,14 +51,16 @@ const addMenu = async (req, res) => {
 const getMenu = async (req, res) => {
     try {
         const sql = `
-      SELECT m.food_id, m.food_name, m.price, m.descriptions, m.food_picture, c.category_name
+     SELECT m.food_id, m.food_name, m.price, m.descriptions, m.food_picture, c.category_name
         FROM menu AS m
         JOIN categories AS c ON m.category_id = c.category_id
         ORDER BY
           FIELD(c.category_name, 'Burgers', 'Sandwiches', 'Sides') DESC,
           FIELD(m.food_id, 16, 17, 18) DESC,
           c.category_name ASC,
+          CASE WHEN c.category_name = 'Milkshakes' THEN 1 ELSE 2 END, -- Sort 'Milkshakes' last
           m.food_name ASC;
+
 
         `;
 
