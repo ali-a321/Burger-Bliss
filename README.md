@@ -1,4 +1,4 @@
-# BurgerBliss
+# Burger Bliss
 **Built using React, CSS, Node.js, Express, and MySQL.**
 
 **Overview:**
@@ -18,5 +18,5 @@ Burger Bliss is a comprehensive burger website designed to cater to both custome
 - **Customer Feedback:** The website includes a Contact Us section where the restaurant can gather valuable insights and respond to customer reviews.
 
 **Infrastructure:**
-- **Robust Database:** MySQL database on AWS through RDS, ensuring data integrity, reliability, and scalability.
+- **Database:** MySQL database on AWS through RDS, ensuring data integrity, reliability, and scalability.
 - **Server Deployment:** The Node.js Express server is deployed on AWS EC2, guaranteeing consistent performance and availability.
