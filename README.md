@@ -14,7 +14,7 @@ Burger Bliss is a comprehensive burger website designed to cater to both custome
 - **Admin Notifications:** The moment an order is placed, our system notifies the admin panel with a distinct sound, ensuring prompt attention to new orders.
 - **JWT Authentication:** Our admin dashboard is protected by JWT authentication, providing a secure environment for employees to manage operations.
 - **Live Order Tracking:** The dashboard showcases live orders without the need to refresh, allowing employees to track and manage incoming requests efficiently.
-- **Menu and Food Categories Modifications:** Employees can easily view and modify the menu and food categories, ensuring an up-to-date and well-organized selection displayed to customers.
+- **Menu and Food Categories Modifications:** Employees can easily view, add, edit, delete the menu and food categories, ensuring an up-to-date and well-organized selection displayed to customers.
 - **Customer Feedback:** The website includes a Contact Us section where the restaurant can gather valuable insights and respond to customer reviews.
 
 **Infrastructure:**
