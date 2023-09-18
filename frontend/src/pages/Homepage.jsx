@@ -16,18 +16,13 @@ function Homepage() {
   const openMenu = () => {
     navigate('/menu')
   }
-  // const { pathname } = useLocation();
-
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, [pathname]);
+ 
 
   return (
     <div className='mainBody'>
         <Header />
         <div className='homePageContainer'> </div>
         <div className="mainPicContainer">
-          {/* First image as background */}
         </div>
         <div className="secondmainPicContainer">
           <img src={secondmainpic} alt="burgers" className="secondmainPic" />
