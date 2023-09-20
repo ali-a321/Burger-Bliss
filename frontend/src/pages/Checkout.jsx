@@ -207,6 +207,7 @@ function Checkout() {
                   src={item.food_picture}
                   alt={item.food_name}
                   className="item-image"
+                  loading='lazy'
                 />
               ) : (
                 <div className="item-image"></div>

@@ -977,11 +977,16 @@ textarea {
 /* About Page*/
 .aboutContainer{
   background-color: #111111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .firstAbout, .secondAbout, .thirdAbout, .fourthAbout{
   margin: 2rem;
   padding: 2rem;
   text-align: left;
+  max-width: 800px;
 }
 .firstAbout{
   margin-top: 0rem;

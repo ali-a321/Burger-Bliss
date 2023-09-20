@@ -16,7 +16,11 @@ function Homepage() {
   const openMenu = () => {
     navigate('/menu')
   }
- 
+  // const { pathname } = useLocation();
+
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, [pathname]);
 
   return (
     <div className='mainBody'>
@@ -25,7 +29,7 @@ function Homepage() {
         <div className="mainPicContainer">
         </div>
         <div className="secondmainPicContainer">
-          <img src={secondmainpic} alt="burgers" className="secondmainPic" />
+          <img src={secondmainpic} alt="burgers" className="secondmainPic" loading='lazy'/>
         </div>
         <div className='center'> 
           <div className='firstTextContainer'>
@@ -47,9 +51,9 @@ function Homepage() {
             </a>
             </div>
             <div className='threePicContainer'> 
-              <img src = {cooking} alt='burger being cooked' className='threePic'/>
-              <img src = {mid} alt='serving the meal' className='threePic'/>
-              <img src = {cashier} alt='cashier' className='midPic'/>
+              <img src = {cooking} alt='burger being cooked' className='threePic' loading='lazy'/>
+              <img src = {mid} alt='serving the meal' className='threePic' loading='lazy'/>
+              <img src = {cashier} alt='cashier' className='midPic' loading='lazy'/>
             </div>
           </div>
         </div>

@@ -128,7 +128,7 @@ function Order() {
                 {items.map((menuItem) => (
                   <div className="burgerInfo" key={menuItem.food_id}>
                     {menuItem.food_picture ? (
-                      <img src={menuItem.food_picture} className="burgerPicture" alt={menuItem.food_name} />
+                      <img src={menuItem.food_picture} className="burgerPicture" alt={menuItem.food_name} loading='lazy' />
                     ) : null}
 
                     <div className="burgerTitle">{menuItem.food_name}</div>

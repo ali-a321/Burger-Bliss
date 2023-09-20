@@ -79,7 +79,7 @@ function Menu() {
           <div className='sandwichNameContainer'> 
           {sandwichMenuData.map((burger) => (
             <div className="burgerInfo" key={burger.food_id}>
-              <img src={burger.food_picture} className='burgerPicture' alt={burger.food_name}/>
+              <img src={burger.food_picture} className='burgerPicture' alt={burger.food_name} loading='lazy'/>
               <div className="burgerTitle">{burger.food_name}</div>
               <div className="burgerDescription">{burger.descriptions}</div>
               <div className="sandwichPrice">${burger.price}</div>
@@ -98,11 +98,11 @@ function Menu() {
             Create your combo with any burger or sandwich from our menu. Pair it with your choice of sides, including French fries, tornado fries, onion rings, poutine, sweet potato fries, mac & cheese bites, or jalapeno poppers. Don't forget to grab a refreshing drink to complete your meal.
             </div>
             </div>
-            <img src={comboImg} alt='burger, fries, and pepsi' className='comboImg'/>
+            <img src={comboImg} alt='burger, fries, and pepsi' className='comboImg' loading='lazy'/>
            
           </div>
           <div className='sidesTitle'> SIDES  </div>
-          <img src={sidesImg} alt='sides at burger bliss' className='sidesImg'/>
+          <img src={sidesImg} alt='sides at burger bliss' className='sidesImg' loading='lazy'/>
           <div className='sandwichNameContainer'> 
           {sideMenuData.map((side) => (
             <div className="burgerInfo" key={side.food_id}>
@@ -120,7 +120,7 @@ function Menu() {
             {items.map((menuItem) => (
               <div className="burgerInfo" key={menuItem.food_id}>
                {menuItem.food_picture ?  
-               <img src={menuItem.food_picture} className="menuPicture" alt={menuItem.food_name}
+               <img src={menuItem.food_picture} className="menuPicture" alt={menuItem.food_name} loading='lazy'
                 /> : ""}
               
                 <div className="burgerTitle">{menuItem.food_name}</div>
@@ -134,8 +134,8 @@ function Menu() {
     </div>
           <div className='sidesTitle'> MILKSHAKES  </div>
           <div className='milkPriceTitle'> $5.99</div>
-          <img src={milkbigImg} alt='milkshakes at burger bliss' className='milkbigImg'/>
-          <img src={milksmallImg} alt='milkshakes at burger bliss' className='milksmallImg'/>
+          <img src={milkbigImg} alt='milkshakes at burger bliss' className='milkbigImg' loading='lazy'/>
+          <img src={milksmallImg} alt='milkshakes at burger bliss' className='milksmallImg' loading='lazy'/>
 
         </div>
 
